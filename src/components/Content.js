@@ -8,7 +8,7 @@ export default function Content({ $app, intialState }) {
         let temp = '';
         if (this.state) {
             this.state.forEach((elm) => {
-                temp += `<img src="${elm}" alt="animal"/>`;
+                temp += `<img src="${elm.url}" alt="animal"/>`;
             });
         }
         return temp;
